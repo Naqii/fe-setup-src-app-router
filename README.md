@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Setup – Next.js App Router
 
-## Getting Started
+A modern frontend starter template built with **Next.js**, **React**, **Tailwind CSS**, and **HeroUI**.
+This project is designed as a clean starting point for building scalable frontend applications using the latest React and Next.js architecture.
 
-First, run the development server:
+The template focuses on:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* modern project structure
+* server-first architecture
+* reusable UI layer
+* fast development workflow
+* maintainable codebase
+
+---
+
+# Tech Stack
+
+Core technologies used in this project:
+
+* **Next.js** (App Router)
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **HeroUI**
+* **PostCSS**
+* **ESLint**
+
+These tools provide a modern environment for building performant and maintainable frontend applications.
+
+---
+
+# Project Structure
+
+```
+.
+├── public
+│   └── static assets
+│
+├── src
+│   ├── app
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   └── providers.tsx
+│   │
+│   └── hero.ts
+│
+├── tailwind.config.ts
+├── postcss.config.mjs
+├── next.config.ts
+├── tsconfig.json
+└── eslint.config.mjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### `src/app`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contains the **Next.js App Router** structure.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* `layout.tsx`
+  Root layout used by the application.
 
-## Learn More
+* `page.tsx`
+  The main entry page.
 
-To learn more about Next.js, take a look at the following resources:
+* `providers.tsx`
+  Contains application-level providers such as UI providers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* `globals.css`
+  Global styles and Tailwind imports.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clone the repository:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+The application will be available at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Tailwind + HeroUI Setup
+
+The project integrates **HeroUI** with **Tailwind CSS** to provide a flexible UI component system.
+
+Key configuration includes:
+
+* Tailwind configuration
+* HeroUI plugin integration
+* global styling
+* UI provider setup
+
+Providers are registered inside:
+
+```
+src/app/providers.tsx
+```
+
+and injected in the root layout.
+
+---
+
+# Development Philosophy
+
+This starter template follows several architectural principles:
+
+### Server-first components
+
+Next.js server components are used by default to improve performance and reduce client-side JavaScript.
+
+### Client components for interaction
+
+Interactive UI components (buttons, forms, animations) are isolated as client components.
+
+### UI abstraction
+
+UI libraries are wrapped inside reusable components to avoid tight coupling with third-party libraries.
+
+---
+
+# Scripts
+
+```
+npm run dev
+```
+
+Start development server.
+
+```
+npm run build
+```
+
+Build production bundle.
+
+```
+npm run start
+```
+
+Run production server.
+
+```
+npm run lint
+```
+
+Run ESLint.
+
+---
+
+# Future Improvements
+
+This template is intentionally minimal.
+Recommended improvements include:
+
+* component folder structure
+* UI abstraction layer
+* environment configuration
+* API layer
+* testing setup
+* CI/CD configuration
+
+---
+
+# License
+
+MIT
