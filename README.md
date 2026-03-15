@@ -181,6 +181,18 @@ Automatically fix lint issues:
 
 npm run lint:fix
 
+## Git Hooks
+
+This project uses Husky and lint-staged to enforce code quality before commits.
+
+When a commit is created:
+
+- ESLint automatically checks staged JavaScript and TypeScript files
+- Prettier formats staged files
+- the commit is blocked if lint errors are found
+
+This helps maintain a consistent codebase and prevents broken code from entering the repository.
+
 # Future Improvements
 
 This template is intentionally minimal.
