@@ -29,7 +29,7 @@ Developer tooling:
 - **ESLint**
 - **Prettier**
 - **Husky**
-- **lint-staged*
+- **lint-staged**
 
 These tools provide a modern environment for building performant and maintainable frontend applications.
 
