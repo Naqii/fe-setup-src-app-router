@@ -5,11 +5,11 @@ This project is designed as a clean starting point for building scalable fronten
 
 The template focuses on:
 
-* modern project structure
-* server-first architecture
-* reusable UI layer
-* fast development workflow
-* maintainable codebase
+- modern project structure
+- server-first architecture
+- reusable UI layer
+- fast development workflow
+- maintainable codebase
 
 ---
 
@@ -17,13 +17,13 @@ The template focuses on:
 
 Core technologies used in this project:
 
-* **Next.js** (App Router)
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **HeroUI**
-* **PostCSS**
-* **ESLint**
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **HeroUI**
+- **PostCSS**
+- **ESLint**
 
 These tools provide a modern environment for building performant and maintainable frontend applications.
 
@@ -56,16 +56,16 @@ These tools provide a modern environment for building performant and maintainabl
 
 Contains the **Next.js App Router** structure.
 
-* `layout.tsx`
+- `layout.tsx`
   Root layout used by the application.
 
-* `page.tsx`
+- `page.tsx`
   The main entry page.
 
-* `providers.tsx`
+- `providers.tsx`
   Contains application-level providers such as UI providers.
 
-* `globals.css`
+- `globals.css`
   Global styles and Tailwind imports.
 
 ---
@@ -104,10 +104,10 @@ The project integrates **HeroUI** with **Tailwind CSS** to provide a flexible UI
 
 Key configuration includes:
 
-* Tailwind configuration
-* HeroUI plugin integration
-* global styling
-* UI provider setup
+- Tailwind configuration
+- HeroUI plugin integration
+- global styling
+- UI provider setup
 
 Providers are registered inside:
 
@@ -165,17 +165,33 @@ Run ESLint.
 
 ---
 
+## Code Formatting
+
+This project uses ESLint and Prettier to maintain consistent code style.
+
+Run formatting:
+
+npm run format
+
+Run lint check:
+
+npm run lint
+
+Automatically fix lint issues:
+
+npm run lint:fix
+
 # Future Improvements
 
 This template is intentionally minimal.
 Recommended improvements include:
 
-* component folder structure
-* UI abstraction layer
-* environment configuration
-* API layer
-* testing setup
-* CI/CD configuration
+- component folder structure
+- UI abstraction layer
+- environment configuration
+- API layer
+- testing setup
+- CI/CD configuration
 
 ---
 

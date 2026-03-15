@@ -1,16 +1,16 @@
-import { heroui } from "@heroui/theme";
-import type { Config } from "tailwindcss";
+import { heroui } from '@heroui/theme'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},
   },
   plugins: [heroui()],
-};
+}
 
-export default config;
+export default config
