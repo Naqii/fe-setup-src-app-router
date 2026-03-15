@@ -17,13 +17,19 @@ The template focuses on:
 
 Core technologies used in this project:
 
-- **Next.js** (App Router)
+- **Next.js** (Page Router)
 - **React**
 - **TypeScript**
 - **Tailwind CSS**
 - **HeroUI**
-- **PostCSS**
+- **Framer Motion**
+
+Developer tooling:
+
 - **ESLint**
+- **Prettier**
+- **Husky**
+- **lint-staged*
 
 These tools provide a modern environment for building performant and maintainable frontend applications.
 
